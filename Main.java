@@ -2,7 +2,7 @@
 // then press Enter. You can now see whitespace characters in your code.
 public class Main {
     public static void main(String[] args) {
-        ContainerShip statek1 = ContainerShip.utworzStatek(200, 10);
+        ContainerShip statek1 = ContainerShip.utworzStatek(200);
 
         RefrigeratedContainer refrigeratedContainer = new RefrigeratedContainer(200.0,3000,1400,29530,250.0,10.0);
         LiquidContainer liquidContainer = new LiquidContainer(200.0,1500,1000,29530,500.0,false);
@@ -20,7 +20,7 @@ public class Main {
         statek1.dodajKontener(liquidContainer);
         statek1.dodajKontener(gasContainer);
 
-        ContainerShip statek2 = ContainerShip.utworzStatek(150, 8);
+        ContainerShip statek2 = ContainerShip.utworzStatek(150);
 
         ContainerShip.przeniesKontenery(statek1, statek2);
         statek2.getContainers().clear();
