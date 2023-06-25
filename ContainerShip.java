@@ -69,7 +69,7 @@ class ContainerShip {
         skad.getContainers().clear();
     }
 
-    public static ContainerShip utworzStatek(int speed, int maxContainers) {
+    public static ContainerShip utworzStatek(int speed) {
         ContainerShip statek = new ContainerShip();
         statek.setMaksymalnaPredkosc(speed);
         statek.setMaksymalnaIloscKontenerow();
